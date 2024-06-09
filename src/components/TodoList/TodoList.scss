@@ -1,0 +1,35 @@
+.todo-list {
+  &__header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .filter{
+      display: flex;
+      justify-content: center;
+      
+      select {
+        appearance: none; 
+        -webkit-appearance: none;
+        -moz-appearance: none; 
+        cursor: pointer;
+        width: 110px;
+        padding: 7px 10px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        background-image: url('../../../public/images/svg/chev-down.svg');
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 8px;
+      } 
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+}

@@ -1,0 +1,17 @@
+.add-todo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@import './styles/theme.scss';
+@import './styles/font.scss';
+
+body {
+  margin: 0;
+  background-color: $bg-main;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18.75px;
+
+  &:focus {
+    outline-color: $secondary-purple;
+  }
+}

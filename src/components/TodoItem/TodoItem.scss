@@ -1,0 +1,107 @@
+@import '../../styles/theme.scss';
+
+.todo-item {
+  display: flex;
+  align-items: center;  
+  padding: 0;
+  background-color: white;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+  &__edit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    gap: 8px;
+    
+    .edit-input {
+      flex:1;
+      background: transparent;
+      border: none;
+      margin: 10px 0;
+      margin-left: 20px;
+      height: 22px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 20px;
+      color: $text-white;
+      background-color: $secondary-purple;
+
+      &:hover {
+        color: #0056b3;
+      }
+
+    }
+  }
+
+  .todo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+
+    .title {
+      flex: 1;
+      text-align: left;
+      margin-top: 1px;
+    }
+
+    .checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+      margin-right: 10px;
+      margin-left: 20px;
+      width: 18px;
+      height: 18px;
+      border-radius: 5px;
+      border: 1px solid $secondary-purple;
+
+      &:checked:before {
+        content: "\2713"; 
+        font-size: 0.8em; 
+        color: #fff; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 1px;
+      }
+      
+      &:checked {
+        background-color: $secondary-purple;
+      }
+    }
+
+    input[type='text'] {
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: #6c757d;
+    }
+  }
+}

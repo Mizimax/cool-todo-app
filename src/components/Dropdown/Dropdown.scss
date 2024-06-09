@@ -1,0 +1,43 @@
+@import '../../styles/theme.scss';
+
+.dropdown {
+  position: relative;
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    color: $text-white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    > button {
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      text-align: left;
+      border: none;
+      background-color: transparent;
+      border-radius: 0;
+      text-align: left;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    &.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
